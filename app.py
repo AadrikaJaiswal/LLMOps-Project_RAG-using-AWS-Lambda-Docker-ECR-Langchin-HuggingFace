@@ -86,7 +86,9 @@ print("Full Response:", response)
 
 # Process the response
 if "body" in response:
-    response_body = json.loads(response["body"].read())
+    response_body_stream = response["body"]
+    response_body_str = response_body_stream.read().decode("utf-8")  # Read and decode response body
+    response_body = json.loads(response_body_str)  # Parse JSON
     if "generation" in response_body:
         response_text = response_body["generation"]
         print("Generated Text:", response_text)
