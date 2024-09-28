@@ -112,9 +112,7 @@ bedrock = boto3.client(
 )
 print("imported successfully...")
 
-prompt = """
-    You are a smart assistant, so please let me know what is machine learning in the smartest way.
-"""
+prompt = "You are a smart assistant. Explain what machine learning is in a simple way."
 
 # Prepare the payload
 payload = {
