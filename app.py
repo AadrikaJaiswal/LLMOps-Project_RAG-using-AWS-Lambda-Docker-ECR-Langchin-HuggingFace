@@ -69,9 +69,9 @@ model_id = "meta.llama3-70b-instruct-v1"
 # Invoke the model
 response = bedrock.invoke_model(
     body=body,
-    model_id=model_id,  # Corrected parameter name
+    modelId=model_id,  # Corrected parameter name
     accept="application/json",
-    content_type="application/json"  # Corrected parameter name
+    contentType="application/json"  # Corrected parameter name
 )
 
 # Process the response
