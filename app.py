@@ -64,7 +64,7 @@ payload = {
 body = json.dumps(payload)
 
 # Set the model ID (with the correct parameter name 'modelId')
-model_id = "meta.llama2-70b-instruct-v1"
+model_id = "meta.llama3-70b-instruct-v1"
 
 # Invoke the model
 response = bedrock.invoke_model(
